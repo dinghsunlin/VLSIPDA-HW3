@@ -17,7 +17,7 @@ opt: $(SRC)
 	make -s clean && $(CXX) $(CXXFLAGS) $(SRC) -o $(EXE)
 clean:
 	$(RM) -f $(EXE) $(OUT)
-a_test: opt
+test: opt
 	@read -n4 -p "Which testcase to run? " CASE; \
 	echo ""; \
 	read -n4 -p "What is the dead space ratio? " RATIO; \
